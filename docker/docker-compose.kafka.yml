@@ -26,11 +26,11 @@ services:
       - kafka.env
     depends_on:
       - zookeeper
-  tb-js-executor:
-    env_file:
-      - queue-kafka.env
-    depends_on:
-      - kafka
+  # tb-js-executor:
+  #   env_file:
+  #     - queue-kafka.env
+  #   depends_on:
+  #     - kafka
   tb-core1:
     env_file:
       - queue-kafka.env
